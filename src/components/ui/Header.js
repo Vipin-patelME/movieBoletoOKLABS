@@ -12,6 +12,7 @@ function Header() {
                   </a>
                 </div>
                 <ul className="menu">
+                <li className="submenu" style={{color:"yellowgreen", fontWeight:"bold", fontSize:"24px"}}>Vipin Patel</li>
                   <li>
                     <a href="/" className="active">Home</a>
                     <ul className="submenu">
