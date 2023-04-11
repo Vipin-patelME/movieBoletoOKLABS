@@ -11,11 +11,13 @@ const Home = () => {
         <div className="container">
           <div className="banner-content">
             <h1 className="title  cd-headline clip">
+            <span className="d-block">Hey Vipin</span>
               <span className="d-block">book your</span> tickets for
-              <span className="color-theme cd-words-wrapper p-0 m-0">
-                <b className="is-visible">Movie</b>
+              <span className="color-theme cd-words-wrapper p-0 m-0 ms-1">
+                <b className="is-visible">Vipin's Class</b>
                 <b>Event</b>
                 <b>Sport</b>
+                <b>Movie</b>
               </span>
             </h1>
             <p>
