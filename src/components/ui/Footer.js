@@ -22,7 +22,7 @@ function Footer() {
             <div className="container">
               <div className="footer-top">
                 <div className="logo">
-                  <a href="index-1.html">
+                  <a href="/">
                     <img src="assets/images/footer/footer-logo.png" alt="footer" />
                   </a>
                 </div>
