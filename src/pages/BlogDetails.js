@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BlogDetails = () => {
   return (
@@ -9,14 +10,14 @@ const BlogDetails = () => {
                 <h2 className="title">blog single</h2>
                 <ul className="breadcrumb">
                 <li>
-                    <a href="index.html">
+                    <Link to="index.html">
                     Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="blog.html">
+                    <Link to="blog.html">
                     blog
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     blog single
@@ -37,16 +38,16 @@ const BlogDetails = () => {
                     <div className="post-content">
                         <div className="post-meta text-center">
                         <div className="item">
-                            <a href="#0">
+                            <Link to="#0">
                             <i className="flaticon-conversation" />
                             <span>30</span>
-                            </a>
+                            </Link>
                         </div>
                         <div className="item">
-                            <a href="#0">
+                            <Link to="#0">
                             <i className="flaticon-share-1" />
                             <span>22</span>
-                            </a>
+                            </Link>
                         </div>
                         </div>
                         <div className="content">
@@ -84,36 +85,36 @@ const BlogDetails = () => {
                                 Tags : 
                             </span>
                             <div className="tags-item">
-                                <a href="#0"> Tickets </a>
-                                <a href="#0"> Coming Soon </a>
-                                <a href="#0"> Movies </a>
+                                <Link to="#0"> Tickets </Link>
+                                <Link to="#0"> Coming Soon </Link>
+                                <Link to="#0"> Movies </Link>
                             </div>
                             </div>
                             <ul className="social-icons">
                             <li>
-                                <a href="#0">
+                                <Link to="#0">
                                 <i className="fab fa-facebook-f" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#0" className="active">
+                                <Link to="#0" className="active">
                                 <i className="fab fa-twitter" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#0">
+                                <Link to="#0">
                                 <i className="fab fa-instagram" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#0">
+                                <Link to="#0">
                                 <i className="fab fa-pinterest" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#0">
+                                <Link to="#0">
                                 <i className="fab fa-google" />
-                                </a>
+                                </Link>
                             </li>
                             </ul>
                         </div>
@@ -122,15 +123,15 @@ const BlogDetails = () => {
                     </div>
                     <div className="blog-author">
                     <div className="author-thumb">
-                        <a href="#0">
+                        <Link to="#0">
                         <img src="assets/images/blog/author.jpg" alt="blog" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="author-content">
                         <h5 className="title">
-                        <a href="#0">
+                        <Link to="#0">
                             Lee Burke 
-                        </a>
+                        </Link>
                         </h5>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua.Quis ipsum suspendisse .
@@ -142,13 +143,13 @@ const BlogDetails = () => {
                     <ul className="comment-area">
                         <li>
                         <div className="blog-thumb">
-                            <a href="#0">
+                            <Link to="#0">
                             <img src="assets/images/blog/author.jpg" alt="blog" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="blog-thumb-info">
                             <span>13 days ago</span>
-                            <h6 className="title"><a href="#0">carl morgan</a></h6>
+                            <h6 className="title"><Link to="#0">carl morgan</Link></h6>
                         </div>
                         <div className="blog-content">
                             <p>
@@ -158,13 +159,13 @@ const BlogDetails = () => {
                         </li>
                         <li>
                         <div className="blog-thumb">
-                            <a href="#0">
+                            <Link to="#0">
                             <img src="assets/images/blog/author.jpg" alt="blog" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="blog-thumb-info">
                             <span>13 days ago</span>
-                            <h6 className="title"><a href="#0">john flores</a></h6>
+                            <h6 className="title"><Link to="#0">john flores</Link></h6>
                         </div>
                         <div className="blog-content">
                             <p>
@@ -174,13 +175,13 @@ const BlogDetails = () => {
                         </li>
                         <li>
                         <div className="blog-thumb">
-                            <a href="#0">
+                            <Link to="#0">
                             <img src="assets/images/blog/author.jpg" alt="blog" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="blog-thumb-info">
                             <span>13 days ago</span>
-                            <h6 className="title"><a href="#0">carl morgan</a></h6>
+                            <h6 className="title"><Link to="#0">carl morgan</Link></h6>
                         </div>
                         <div className="blog-content">
                             <p>
@@ -227,33 +228,33 @@ const BlogDetails = () => {
                     <div className="widget-slider owl-carousel owl-theme">
                         <div className="item">
                         <div className="thumb">
-                            <a href="#0">
+                            <Link to="#0">
                             <img src="assets/images/blog/slider01.jpg" alt="blog" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="content">
                             <h6 className="p-title">
-                            <a href="#0">Three Ways to Book Sporting Event Tickets</a>
+                            <Link to="#0">Three Ways to Book Sporting Event Tickets</Link>
                             </h6>
                             <div className="meta-post">
-                            <a href="#0" className="mr-4"><i className="flaticon-loupe" />20 Comments</a>
-                            <a href="#0"><i className="flaticon-loupe" />466 View</a>
+                            <Link to="#0" className="mr-4"><i className="flaticon-loupe" />20 Comments</Link>
+                            <Link to="#0"><i className="flaticon-loupe" />466 View</Link>
                             </div>
                         </div>
                         </div>
                         <div className="item">
                         <div className="thumb">
-                            <a href="#0">
+                            <Link to="#0">
                             <img src="assets/images/blog/slider01.jpg" alt="blog" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="content">
                             <h6 className="p-title">
-                            <a href="#0">Three Ways to Book Sporting Event Tickets</a>
+                            <Link to="#0">Three Ways to Book Sporting Event Tickets</Link>
                             </h6>
                             <div className="meta-post">
-                            <a href="#0" className="mr-4"><i className="flaticon-loupe" />20 Comments</a>
-                            <a href="#0"><i className="flaticon-loupe" />466 View</a>
+                            <Link to="#0" className="mr-4"><i className="flaticon-loupe" />20 Comments</Link>
+                            <Link to="#0"><i className="flaticon-loupe" />466 View</Link>
                             </div>
                         </div>
                         </div>
@@ -263,29 +264,29 @@ const BlogDetails = () => {
                     <h5 className="title">Follow Us</h5>
                     <ul className="social-icons">
                         <li>
-                        <a href="#0" className>
+                        <Link to="#0" className>
                             <i className="fab fa-facebook-f" />
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0" className="active">
+                        <Link to="#0" className="active">
                             <i className="fab fa-twitter" />
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0" className>
+                        <Link to="#0" className>
                             <i className="fab fa-pinterest-p" />
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <i className="fab fa-google" />
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <i className="fab fa-instagram" />
-                        </a>
+                        </Link>
                         </li>
                     </ul>
                     </div>
@@ -293,39 +294,39 @@ const BlogDetails = () => {
                     <h5 className="title">categories</h5>
                     <ul>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Showtimes &amp; Tickets</span><span>50</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Latest Trailers</span><span>43</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Coming Soon </span><span>34</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>In Theaters</span><span>63</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Release Calendar</span><span>11</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Stars</span><span>30</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Horror Movie </span><span>55</span>
-                        </a>
+                        </Link>
                         </li>
                     </ul>
                     </div>
@@ -333,19 +334,19 @@ const BlogDetails = () => {
                     <h5 className="title">featured tags</h5>
                     <ul>
                         <li>
-                        <a href="#0">creative</a>
+                        <Link to="#0">creative</Link>
                         </li>
                         <li>
-                        <a href="#0">design</a>
+                        <Link to="#0">design</Link>
                         </li>
                         <li>
-                        <a href="#0">skill</a>
+                        <Link to="#0">skill</Link>
                         </li>
                         <li>
-                        <a href="#0">template</a>
+                        <Link to="#0">template</Link>
                         </li>
                         <li>
-                        <a href="#0" className="active">landing</a>
+                        <Link to="#0" className="active">landing</Link>
                         </li>
                     </ul>
                     </div>

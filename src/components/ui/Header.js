@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Navigation from './Navigation'
 
 function Header() {
@@ -8,9 +9,9 @@ function Header() {
             <div className="container">
               <div className="header-wrapper">
                 <div className="logo">
-                  <a href="/">
+                  <Link to="/">
                     <img src="assets/images/logo/logo.png" alt="logo" />
-                  </a>
+                  </Link>
                 </div>
                 <Navigation />
                 <div className="header-bar d-lg-none">

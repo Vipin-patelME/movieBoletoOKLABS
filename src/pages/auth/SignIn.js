@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SignIn = () => {
   return (
@@ -23,31 +24,31 @@ const SignIn = () => {
                     <div className="form-group checkgroup">
                         <input type="checkbox" id="bal2" required defaultChecked />
                         <label htmlFor="bal2">remember password</label>
-                        <a href="#0" className="forget-pass">Forget Password</a>
+                        <Link to="#0" className="forget-pass">Forget Password</Link>
                     </div>
                     <div className="form-group text-center">
                         <input type="submit" defaultValue="log in" />
                     </div>
                     </form>
                     <div className="option">
-                    Don't have an account? <a href="sign-up">sign up now</a>
+                    Don't have an account? <Link to="sign-up">sign up now</Link>
                     </div>
                     <div className="or"><span>Or</span></div>
                     <ul className="social-icons">
                     <li>
-                        <a href="#0">
+                        <Link to="#0">
                         <i className="fab fa-facebook-f" />
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#0" className="active">
+                        <Link to="#0" className="active">
                         <i className="fab fa-twitter" />
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#0">
+                        <Link to="#0">
                         <i className="fab fa-google" />
-                        </a>
+                        </Link>
                     </li>
                     </ul>
                 </div>

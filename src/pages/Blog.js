@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Blog = () => {
   return (
@@ -9,9 +10,9 @@ const Blog = () => {
                 <h2 className="title">blog - 01</h2>
                 <ul className="breadcrumb">
                 <li>
-                    <a href="index.html">
+                    <Link to="index.html">
                     Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     blog
@@ -27,20 +28,20 @@ const Blog = () => {
                 <article>
                     <div className="post-item">
                     <div className="post-thumb">
-                        <a href="blog-details.html">
+                        <Link to="blog-details.html">
                         <img src="assets/images/blog/blog01.jpg" alt="blog" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="post-content">
                         <div className="post-header">
                         <h4 className="title">
-                            <a href="blog-details.html">
+                            <Link to="blog-details.html">
                             Increase Event Ticket Sales For Film Production With the Right Advertising Strategies
-                            </a>
+                            </Link>
                         </h4>
                         <div className="meta-post">
-                            <a href="#0" className="mr-4"><i className="flaticon-conversation" />20 Comments</a>
-                            <a href="#0"><i className="flaticon-view" />466 View</a>
+                            <Link to="#0" className="mr-4"><i className="flaticon-conversation" />20 Comments</Link>
+                            <Link to="#0"><i className="flaticon-view" />466 View</Link>
                         </div>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac cursus leo. Nullam dolor nunc, hendrerit non velit id, pharetra viverra elit.
@@ -51,12 +52,12 @@ const Blog = () => {
                             <span className="date">Dece 15, 2020 BY </span>
                             <div className="authors">
                             <div className="thumb">
-                                <a href="#0"><img src="assets/images/blog/author.jpg" alt="#0" /></a>
+                                <Link to="#0"><img src="assets/images/blog/author.jpg" alt="#0" /></Link>
                             </div>
-                            <h6 className="title"><a href="#0">Alvin Mcdaniel</a></h6>
+                            <h6 className="title"><Link to="#0">Alvin Mcdaniel</Link></h6>
                             </div>
                         </div>
-                        <a href="#0" className="buttons">Read More <i className="flaticon-right" /></a>
+                        <Link to="#0" className="buttons">Read More <i className="flaticon-right" /></Link>
                         </div>
                     </div>
                     </div>
@@ -78,13 +79,13 @@ const Blog = () => {
                     <div className="post-content">
                         <div className="post-header">
                         <h4 className="title">
-                            <a href="blog-details.html">
+                            <Link to="blog-details.html">
                             Factors To Take Into Consideration When You Want To Buy Tickets Online
-                            </a>
+                            </Link>
                         </h4>
                         <div className="meta-post">
-                            <a href="#0" className="mr-4"><i className="flaticon-conversation" />20 Comments</a>
-                            <a href="#0"><i className="flaticon-view" />466 View</a>
+                            <Link to="#0" className="mr-4"><i className="flaticon-conversation" />20 Comments</Link>
+                            <Link to="#0"><i className="flaticon-view" />466 View</Link>
                         </div>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac cursus leo. Nullam dolor nunc, hendrerit non velit id, pharetra viverra elit.
@@ -95,32 +96,32 @@ const Blog = () => {
                             <span className="date">Dece 15, 2020 BY </span>
                             <div className="authors">
                             <div className="thumb">
-                                <a href="#0"><img src="assets/images/blog/author.jpg" alt="#0" /></a>
+                                <Link to="#0"><img src="assets/images/blog/author.jpg" alt="#0" /></Link>
                             </div>
-                            <h6 className="title"><a href="#0">Alvin Mcdaniel</a></h6>
+                            <h6 className="title"><Link to="#0">Alvin Mcdaniel</Link></h6>
                             </div>
                         </div>
-                        <a href="#0" className="buttons">Read More <i className="flaticon-right" /></a>
+                        <Link to="#0" className="buttons">Read More <i className="flaticon-right" /></Link>
                         </div>
                     </div>
                     </div>
                     <div className="post-item">
                     <div className="post-thumb">
                         <img src="assets/images/blog/blog03.jpg" alt="blog" />
-                        <a href="https://www.youtube.com/embed/GT6-H4BRyqQ" className="video-button video-popup">
+                        <Link to="https://www.youtube.com/embed/GT6-H4BRyqQ" className="video-button video-popup">
                         <i className="flaticon-play-button" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="post-content">
                         <div className="post-header">
                         <h4 className="title">
-                            <a href="blog-details.html">
+                            <Link to="blog-details.html">
                             Movie Ticket Prices: One Size Fits All? It's Time to Experiment
-                            </a>
+                            </Link>
                         </h4>
                         <div className="meta-post">
-                            <a href="#0" className="mr-4"><i className="flaticon-conversation" />20 Comments</a>
-                            <a href="#0"><i className="flaticon-view" />466 View</a>
+                            <Link to="#0" className="mr-4"><i className="flaticon-conversation" />20 Comments</Link>
+                            <Link to="#0"><i className="flaticon-view" />466 View</Link>
                         </div>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac cursus leo. Nullam dolor nunc, hendrerit non velit id, pharetra viverra elit.
@@ -131,31 +132,31 @@ const Blog = () => {
                             <span className="date">Dece 15, 2020 BY </span>
                             <div className="authors">
                             <div className="thumb">
-                                <a href="#0"><img src="assets/images/blog/author.jpg" alt="#0" /></a>
+                                <Link to="#0"><img src="assets/images/blog/author.jpg" alt="#0" /></Link>
                             </div>
-                            <h6 className="title"><a href="#0">Alvin Mcdaniel</a></h6>
+                            <h6 className="title"><Link to="#0">Alvin Mcdaniel</Link></h6>
                             </div>
                         </div>
-                        <a href="#0" className="buttons">Read More <i className="flaticon-right" /></a>
+                        <Link to="#0" className="buttons">Read More <i className="flaticon-right" /></Link>
                         </div>
                     </div>
                     </div>
                     <div className="post-item">
                     <div className="post-thumb">
-                        <a href="blog-details.html">
+                        <Link to="blog-details.html">
                         <img src="assets/images/blog/blog04.jpg" alt="blog" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="post-content">
                         <div className="post-header">
                         <h4 className="title">
-                            <a href="blog-details.html">
+                            <Link to="blog-details.html">
                             Movie Ticket Prices: One Size Fits All? It's Time to Experiment
-                            </a>
+                            </Link>
                         </h4>
                         <div className="meta-post">
-                            <a href="#0" className="mr-4"><i className="flaticon-conversation" />20 Comments</a>
-                            <a href="#0"><i className="flaticon-view" />466 View</a>
+                            <Link to="#0" className="mr-4"><i className="flaticon-conversation" />20 Comments</Link>
+                            <Link to="#0"><i className="flaticon-view" />466 View</Link>
                         </div>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac cursus leo. Nullam dolor nunc, hendrerit non velit id, pharetra viverra elit.
@@ -166,24 +167,24 @@ const Blog = () => {
                             <span className="date">Dece 15, 2020 BY </span>
                             <div className="authors">
                             <div className="thumb">
-                                <a href="#0"><img src="assets/images/blog/author.jpg" alt="#0" /></a>
+                                <Link to="#0"><img src="assets/images/blog/author.jpg" alt="#0" /></Link>
                             </div>
-                            <h6 className="title"><a href="#0">Alvin Mcdaniel</a></h6>
+                            <h6 className="title"><Link to="#0">Alvin Mcdaniel</Link></h6>
                             </div>
                         </div>
-                        <a href="#0" className="buttons">Read More <i className="flaticon-right" /></a>
+                        <Link to="#0" className="buttons">Read More <i className="flaticon-right" /></Link>
                         </div>
                     </div>
                     </div>
                 </article>
                 <div className="pagination-area text-center">
-                    <a href="#0"><i className="fas fa-angle-double-left" /><span>Prev</span></a>
-                    <a href="#0">1</a>
-                    <a href="#0">2</a>
-                    <a href="#0" className="active">3</a>
-                    <a href="#0">4</a>
-                    <a href="#0">5</a>
-                    <a href="#0"><span>Next</span><i className="fas fa-angle-double-right" /></a>
+                    <Link to="#0"><i className="fas fa-angle-double-left" /><span>Prev</span></Link>
+                    <Link to="#0">1</Link>
+                    <Link to="#0">2</Link>
+                    <Link to="#0" className="active">3</Link>
+                    <Link to="#0">4</Link>
+                    <Link to="#0">5</Link>
+                    <Link to="#0"><span>Next</span><i className="fas fa-angle-double-right" /></Link>
                 </div>
                 </div>
                 <div className="col-lg-4 col-sm-10 col-md-8">
@@ -204,33 +205,33 @@ const Blog = () => {
                     <div className="widget-slider owl-carousel owl-theme">
                         <div className="item">
                         <div className="thumb">
-                            <a href="#0">
+                            <Link to="#0">
                             <img src="assets/images/blog/slider01.jpg" alt="blog" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="content">
                             <h6 className="p-title">
-                            <a href="#0">Three Ways to Book Sporting Event Tickets</a>
+                            <Link to="#0">Three Ways to Book Sporting Event Tickets</Link>
                             </h6>
                             <div className="meta-post">
-                            <a href="#0" className="mr-4"><i className="flaticon-loupe" />20 Comments</a>
-                            <a href="#0"><i className="flaticon-loupe" />466 View</a>
+                            <Link to="#0" className="mr-4"><i className="flaticon-loupe" />20 Comments</Link>
+                            <Link to="#0"><i className="flaticon-loupe" />466 View</Link>
                             </div>
                         </div>
                         </div>
                         <div className="item">
                         <div className="thumb">
-                            <a href="#0">
+                            <Link to="#0">
                             <img src="assets/images/blog/slider01.jpg" alt="blog" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="content">
                             <h6 className="p-title">
-                            <a href="#0">Three Ways to Book Sporting Event Tickets</a>
+                            <Link to="#0">Three Ways to Book Sporting Event Tickets</Link>
                             </h6>
                             <div className="meta-post">
-                            <a href="#0" className="mr-4"><i className="flaticon-loupe" />20 Comments</a>
-                            <a href="#0"><i className="flaticon-loupe" />466 View</a>
+                            <Link to="#0" className="mr-4"><i className="flaticon-loupe" />20 Comments</Link>
+                            <Link to="#0"><i className="flaticon-loupe" />466 View</Link>
                             </div>
                         </div>
                         </div>
@@ -240,29 +241,29 @@ const Blog = () => {
                     <h5 className="title">Follow Us</h5>
                     <ul className="social-icons">
                         <li>
-                        <a href="#0" className>
+                        <Link to="#0" className>
                             <i className="fab fa-facebook-f" />
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0" className="active">
+                        <Link to="#0" className="active">
                             <i className="fab fa-twitter" />
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0" className>
+                        <Link to="#0" className>
                             <i className="fab fa-pinterest-p" />
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <i className="fab fa-google" />
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <i className="fab fa-instagram" />
-                        </a>
+                        </Link>
                         </li>
                     </ul>
                     </div>
@@ -270,39 +271,39 @@ const Blog = () => {
                     <h5 className="title">categories</h5>
                     <ul>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Showtimes &amp; Tickets</span><span>50</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Latest Trailers</span><span>43</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Coming Soon </span><span>34</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>In Theaters</span><span>63</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Release Calendar</span><span>11</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Stars</span><span>30</span>
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                        <a href="#0">
+                        <Link to="#0">
                             <span>Horror Movie </span><span>55</span>
-                        </a>
+                        </Link>
                         </li>
                     </ul>
                     </div>
@@ -310,19 +311,19 @@ const Blog = () => {
                     <h5 className="title">featured tags</h5>
                     <ul>
                         <li>
-                        <a href="#0">creative</a>
+                        <Link to="#0">creative</Link>
                         </li>
                         <li>
-                        <a href="#0">design</a>
+                        <Link to="#0">design</Link>
                         </li>
                         <li>
-                        <a href="#0">skill</a>
+                        <Link to="#0">skill</Link>
                         </li>
                         <li>
-                        <a href="#0">template</a>
+                        <Link to="#0">template</Link>
                         </li>
                         <li>
-                        <a href="#0" className="active">landing</a>
+                        <Link to="#0" className="active">landing</Link>
                         </li>
                     </ul>
                     </div>

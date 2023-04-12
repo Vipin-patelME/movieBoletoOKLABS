@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NotFound = () => {
   return (
@@ -9,7 +10,7 @@ const NotFound = () => {
                 <img src="assets/images/404.png" alt={404} />
                 </div>
                 <h3 className="title">Oops.. looks like you got lost :( </h3>
-                <a href="/" className="custom-button">Back To Home <i className="flaticon-right" /></a>
+                <Link to="/" className="custom-button">Back To Home <i className="flaticon-right" /></Link>
             </div>
         </section>
     </>

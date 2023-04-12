@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navigation = () => {
   return (
@@ -6,73 +7,73 @@ const Navigation = () => {
         <ul className="menu">
             <li className="submenu" style={{color:"yellowgreen", fontWeight:"bold", fontSize:"24px"}}>Vipin Patel</li>
                 <li>
-                <a href="/" className="active">Home</a>
+                <Link to="/" className="active">Home</Link>
                 <ul className="submenu">
                     <li>
-                    <a href="/" className="active">Home One</a>
+                    <Link to="/" className="active">Home One</Link>
                     </li>
                     <li>
-                    <a href="/">Home Two</a>
+                    <Link to="/">Home Two</Link>
                     </li>
                 </ul>
                 </li>
                 <li>
-                <a href="/">movies</a>
+                <Link to="/">movies</Link>
                 <ul className="submenu">
                     <li>
-                    <a href="movie-grid">Movie Grid</a>
+                    <Link to="movie-grid">Movie Grid</Link>
                     </li>
                     <li>
-                    <a href="movie-list">Movie List</a>
+                    <Link to="movie-list">Movie List</Link>
                     </li>
                     <li>
-                    <a href="movie-details">Movie Details</a>
+                    <Link to="movie-details">Movie Details</Link>
                     </li>
                     <li>
-                    <a href="movie-details-2">Movie Details 2</a>
+                    <Link to="movie-details-2">Movie Details 2</Link>
                     </li>
                     <li>
-                    <a href="movie-ticket-plan">Movie Ticket Plan</a>
+                    <Link to="movie-ticket-plan">Movie Ticket Plan</Link>
                     </li>
                     <li>
-                    <a href="movie-seat-plan">Movie Seat Plan</a>
+                    <Link to="movie-seat-plan">Movie Seat Plan</Link>
                     </li>
                     <li>
-                    <a href="movie-checkout">Movie Checkout</a>
+                    <Link to="movie-checkout">Movie Checkout</Link>
                     </li>
                     <li>
-                    <a href="movie-popcorn">Movie Food</a>
+                    <Link to="movie-popcorn">Movie Food</Link>
                     </li>
                 </ul>
                 </li>
             
                 <li>
-                <a href="#0">pages</a>
+                <Link to="#0">pages</Link>
                 <ul className="submenu">
                     <li>
-                    <a href="sign-in">Sign In</a>
+                    <Link to="sign-in">Sign In</Link>
                     </li>
                     <li>
-                    <a href="sign-up">Sign Up</a>
+                    <Link to="sign-up">Sign Up</Link>
                     </li>
                 </ul>
                 </li>
                 <li>
-                <a href="#0">blog</a>
+                <Link to="#0">blog</Link>
                 <ul className="submenu">
                     <li>
-                    <a href="blog">Blog</a>
+                    <Link to="blog">Blog</Link>
                     </li>
                     <li>
-                    <a href="blog-details">Blog Single</a>
+                    <Link to="blog-details">Blog Single</Link>
                     </li>
                 </ul>
                 </li>
                 <li>
-                <a href="contact">contact</a>
+                <Link to="contact">contact</Link>
                 </li>
                 <li className="header-button pr-0">
-                <a href="sign-up">join us</a>
+                <Link to="sign-up">join us</Link>
                 </li>
             </ul>
         </>

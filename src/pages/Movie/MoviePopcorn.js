@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MoviePopcorn = () => {
   return (
@@ -9,8 +10,8 @@ const MoviePopcorn = () => {
                 <div className="details-banner-content style-two">
                 <h3 className="title">Venus</h3>
                 <div className="tags">
-                    <a href="#0">City Walk</a>
-                    <a href="#0">English - 2D</a>
+                    <Link to="#0">City Walk</Link>
+                    <Link to="#0">English - 2D</Link>
                 </div>
                 </div>
             </div>
@@ -20,9 +21,9 @@ const MoviePopcorn = () => {
             <div className="container">
             <div className="page-title-area">
                 <div className="item md-order-1">
-                <a href="movie-ticket-plan.html" className="custom-button back-button">
+                <Link to="movie-ticket-plan.html" className="custom-button back-button">
                     <i className="flaticon-double-right-arrows-angles" />back
-                </a>
+                </Link>
                 </div>
                 <div className="item date-item">
                 <span className="date">MON, SEP 09 2020</span>
@@ -74,9 +75,9 @@ const MoviePopcorn = () => {
                         </div>
                         <div className="grid-content">
                             <h5 className="subtitle">
-                            <a href="#0">
+                            <Link to="#0">
                                 Muchaco, Crispy Taco, Bean Burrito
-                            </a>
+                            </Link>
                             </h5>
                             <form className="cart-button">
                             <div className="cart-plus-minus">
@@ -103,9 +104,9 @@ const MoviePopcorn = () => {
                         </div>
                         <div className="grid-content">
                             <h5 className="subtitle">
-                            <a href="#0">
+                            <Link to="#0">
                                 Crispy Beef Taco, Beef Mucho Nachos
-                            </a>
+                            </Link>
                             </h5>
                             <form className="cart-button">
                             <div className="cart-plus-minus">
@@ -132,9 +133,9 @@ const MoviePopcorn = () => {
                         </div>
                         <div className="grid-content">
                             <h5 className="subtitle">
-                            <a href="#0">
+                            <Link to="#0">
                                 Chicken Quesadilla Crispy Beef Taco
-                            </a>
+                            </Link>
                             </h5>
                             <form className="cart-button">
                             <div className="cart-plus-minus">
@@ -161,9 +162,9 @@ const MoviePopcorn = () => {
                         </div>
                         <div className="grid-content">
                             <h5 className="subtitle">
-                            <a href="#0">
+                            <Link to="#0">
                                 MexiDips &amp; Chips, Beef Muchaco
-                            </a>
+                            </Link>
                             </h5>
                             <form className="cart-button">
                             <div className="cart-plus-minus">
@@ -213,7 +214,7 @@ const MoviePopcorn = () => {
                 </div>
                 <div className="proceed-area  text-center">
                     <h6 className="subtitle"><span>Amount Payable</span><span>$222</span></h6>
-                    <a href="#0" className="custom-button back-button">proceed</a>
+                    <Link to="#0" className="custom-button back-button">proceed</Link>
                 </div>
                 <div className="note">
                     <h5 className="title">Note :</h5>

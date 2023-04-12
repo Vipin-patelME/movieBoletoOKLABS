@@ -1,6 +1,45 @@
-import React from "react";
+import React, { useReducer } from "react";
+import { Link } from "react-router-dom";
+
+const initialState ={
+  movies:[
+    {
+      id:1,
+      name:"Alone musk",
+      movieUrl:"http://pixner.net/boleto/demo/assets/images/movie/movie01.jpg"
+    },
+    {
+      id:2,
+      name:"Michel Mars",
+      movieUrl:"http://pixner.net/boleto/demo/assets/images/movie/movie02.jpg"
+    },
+    {
+      id:3,
+      name:"Lux Venus",
+      movieUrl:"http://pixner.net/boleto/demo/assets/images/movie/movie03.jpg"
+    }
+  ]
+} 
+
+const reducer = (state, action)=>{
+  switch(action.type){
+    case "REMOVE_MOVIE":
+      return{
+        ...state,
+        movies:[...state.movies?.filter(eachMovie=>eachMovie.id !== action.id)]
+      }
+  }
+}
+
+
+
+
+
 
 const Home = () => {
+
+  const [movieDetail, dispatch] = useReducer(reducer, initialState)
+
   return (
     <>
       <section className="banner-section">
@@ -241,7 +280,7 @@ const Home = () => {
                 <div className="widget-1-body">
                   <ul>
                     <li>
-                      <a href="#0">
+                      <Link to="#0">
                         <span className="img">
                           <img
                             src="assets/images/sidebar/icons/sidebar01.png"
@@ -249,10 +288,10 @@ const Home = () => {
                           />
                         </span>
                         <span className="cate">24X7 Care</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#0">
+                      <Link to="#0">
                         <span className="img">
                           <img
                             src="assets/images/sidebar/icons/sidebar02.png"
@@ -260,10 +299,10 @@ const Home = () => {
                           />
                         </span>
                         <span className="cate">100% Assurance</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#0">
+                      <Link to="#0">
                         <span className="img">
                           <img
                             src="assets/images/sidebar/icons/sidebar03.png"
@@ -271,19 +310,19 @@ const Home = () => {
                           />
                         </span>
                         <span className="cate">Our Promise</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="widget-1 widget-banner">
                 <div className="widget-1-body">
-                  <a href="#0">
+                  <Link to="#0">
                     <img
                       src="assets/images/sidebar/banner/banner01.jpg"
                       alt="banner"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="widget-1 widget-trending-search">
@@ -292,25 +331,25 @@ const Home = () => {
                   <ul>
                     <li>
                       <h6 className="sub-title">
-                        <a href="#0">mars</a>
+                        <Link to="#0">mars</Link>
                       </h6>
                       <p>Movies</p>
                     </li>
                     <li>
                       <h6 className="sub-title">
-                        <a href="#0">alone</a>
+                        <Link to="#0">alone</Link>
                       </h6>
                       <p>Movies</p>
                     </li>
                     <li>
                       <h6 className="sub-title">
-                        <a href="#0">music event</a>
+                        <Link to="#0">music event</Link>
                       </h6>
                       <p>event</p>
                     </li>
                     <li>
                       <h6 className="sub-title">
-                        <a href="#0">NBA Games 2020</a>
+                        <Link to="#0">NBA Games 2020</Link>
                       </h6>
                       <p>Sports</p>
                     </li>
@@ -319,12 +358,12 @@ const Home = () => {
               </div>
               <div className="widget-1 widget-banner">
                 <div className="widget-1-body">
-                  <a href="#0">
+                  <Link to="#0">
                     <img
                       src="assets/images/sidebar/banner/banner02.jpg"
                       alt="banner"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -332,61 +371,78 @@ const Home = () => {
               <div className="article-section padding-bottom">
                 <div className="section-header-1">
                   <h2 className="title">movies</h2>
-                  <a className="view-all" href="movie-grid.html">
+                  <Link className="view-all" to="movie-grid">
                     View All
-                  </a>
+                  </Link>
                 </div>
                 <div className="row mb-30-none justify-content-center">
-                  <div className="col-sm-6 col-lg-4">
+                  {
+                    movieDetail?.movies?.map(eachMovie=>{
+                      return(
+                        <>
+                          <div key={eachMovie.id} className="col-sm-6 col-lg-4">
+                            <div className="movie-grid">
+                              <div className="movie-thumb c-thumb">
+                                <Link to="#0">
+                                  <img
+                                    src={eachMovie.movieUrl}
+                                    alt="movie"
+                                  />
+                                </Link>
+                              </div>
+                              <div className="movie-content bg-one">
+                                <h5 className="title m-0">
+                                  <Link to="#0">{eachMovie.name}</Link>
+                                </h5>
+                                <ul className="movie-rating-percent">
+                                  <li>
+                                    <div className="thumb">
+                                      <img
+                                        src="assets/images/movie/tomato.png"
+                                        alt="movie"
+                                      />
+                                    </div>
+                                    <span className="content">88%</span>
+                                  </li>
+                                  <li>
+                                    <div className="thumb">
+                                      <img
+                                        src="assets/images/movie/cake.png"
+                                        alt="movie"
+                                      />
+                                    </div>
+                                    <span className="content">88%</span>
+                                  </li>
+                                  <li>
+                                    <div onClick={()=>dispatch({type:"REMOVE_MOVIE", id:eachMovie.id})} className="thumb">
+                                      <img
+                                        src="https://images.freeimages.com/fic/images/icons/1262/amora/256/delete.png"
+                                        alt="movie"
+                                        style={{width:"40px", cursor:"pointer"}}
+                                      />
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </>
+                      )
+                    })
+                  }
+                  {/* <div className="col-sm-6 col-lg-4">
                     <div className="movie-grid">
                       <div className="movie-thumb c-thumb">
-                        <a href="#0">
-                          <img
-                            src="assets/images/movie/movie01.jpg"
-                            alt="movie"
-                          />
-                        </a>
-                      </div>
-                      <div className="movie-content bg-one">
-                        <h5 className="title m-0">
-                          <a href="#0">alone</a>
-                        </h5>
-                        <ul className="movie-rating-percent">
-                          <li>
-                            <div className="thumb">
-                              <img
-                                src="assets/images/movie/tomato.png"
-                                alt="movie"
-                              />
-                            </div>
-                            <span className="content">88%</span>
-                          </li>
-                          <li>
-                            <div className="thumb">
-                              <img
-                                src="assets/images/movie/cake.png"
-                                alt="movie"
-                              />
-                            </div>
-                            <span className="content">88%</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-6 col-lg-4">
-                    <div className="movie-grid">
-                      <div className="movie-thumb c-thumb">
-                        <a href="#0">
+                        <Link to="#0">
                           <img
                             src="assets/images/movie/movie02.jpg"
                             alt="movie"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="movie-content bg-one">
                         <h5 className="title m-0">
-                          <a href="#0">mars</a>
+                          <Link to="#0">mars</Link>
                         </h5>
                         <ul className="movie-rating-percent">
                           <li>
@@ -414,16 +470,16 @@ const Home = () => {
                   <div className="col-sm-6 col-lg-4">
                     <div className="movie-grid">
                       <div className="movie-thumb c-thumb">
-                        <a href="#0">
+                        <Link to="#0">
                           <img
                             src="assets/images/movie/movie03.jpg"
                             alt="movie"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="movie-content bg-one">
                         <h5 className="title m-0">
-                          <a href="#0">venus</a>
+                          <Link to="#0">venus</Link>
                         </h5>
                         <ul className="movie-rating-percent">
                           <li>
@@ -447,26 +503,26 @@ const Home = () => {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="article-section padding-bottom">
                 <div className="section-header-1">
                   <h2 className="title">events</h2>
-                  <a className="view-all" href="events.html">
+                  <Link className="view-all" to="events.html">
                     View All
-                  </a>
+                  </Link>
                 </div>
                 <div className="row mb-30-none justify-content-center">
                   <div className="col-sm-6 col-lg-4">
                     <div className="event-grid">
                       <div className="movie-thumb c-thumb">
-                        <a href="#0">
+                        <Link to="#0">
                           <img
                             src="assets/images/event/event01.jpg"
                             alt="event"
                           />
-                        </a>
+                        </Link>
                         <div className="event-date">
                           <h6 className="date-title">28</h6>
                           <span>Dec</span>
@@ -474,7 +530,7 @@ const Home = () => {
                       </div>
                       <div className="movie-content bg-one">
                         <h5 className="title m-0">
-                          <a href="#0">Digital Economy Conference 2020</a>
+                          <Link to="#0">Digital Economy Conference 2020</Link>
                         </h5>
                         <div className="movie-rating-percent">
                           <span>327 Montague Street</span>
@@ -485,12 +541,12 @@ const Home = () => {
                   <div className="col-sm-6 col-lg-4">
                     <div className="event-grid">
                       <div className="movie-thumb c-thumb">
-                        <a href="#0">
+                        <Link to="#0">
                           <img
                             src="assets/images/event/event02.jpg"
                             alt="event"
                           />
-                        </a>
+                        </Link>
                         <div className="event-date">
                           <h6 className="date-title">28</h6>
                           <span>Dec</span>
@@ -498,7 +554,7 @@ const Home = () => {
                       </div>
                       <div className="movie-content bg-one">
                         <h5 className="title m-0">
-                          <a href="#0">web design conference 2020</a>
+                          <Link to="#0">web design conference 2020</Link>
                         </h5>
                         <div className="movie-rating-percent">
                           <span>327 Montague Street</span>
@@ -509,12 +565,12 @@ const Home = () => {
                   <div className="col-sm-6 col-lg-4">
                     <div className="event-grid">
                       <div className="movie-thumb c-thumb">
-                        <a href="#0">
+                        <Link to="#0">
                           <img
                             src="assets/images/event/event03.jpg"
                             alt="event"
                           />
-                        </a>
+                        </Link>
                         <div className="event-date">
                           <h6 className="date-title">28</h6>
                           <span>Dec</span>
@@ -522,7 +578,7 @@ const Home = () => {
                       </div>
                       <div className="movie-content bg-one">
                         <h5 className="title m-0">
-                          <a href="#0">digital thinkers meetup</a>
+                          <Link to="#0">digital thinkers meetup</Link>
                         </h5>
                         <div className="movie-rating-percent">
                           <span>327 Montague Street</span>
@@ -535,20 +591,20 @@ const Home = () => {
               <div className="article-section">
                 <div className="section-header-1">
                   <h2 className="title">sports</h2>
-                  <a className="view-all" href="sports.html">
+                  <Link className="view-all" to="sports">
                     View All
-                  </a>
+                  </Link>
                 </div>
                 <div className="row mb-30-none justify-content-center">
                   <div className="col-sm-6 col-lg-4">
                     <div className="sports-grid">
                       <div className="movie-thumb c-thumb">
-                        <a href="#0">
+                        <Link to="#0">
                           <img
                             src="assets/images/sports/sports01.jpg"
                             alt="sports"
                           />
-                        </a>
+                        </Link>
                         <div className="event-date">
                           <h6 className="date-title">28</h6>
                           <span>Dec</span>
@@ -556,7 +612,7 @@ const Home = () => {
                       </div>
                       <div className="movie-content bg-one">
                         <h5 className="title m-0">
-                          <a href="#0">football league tournament</a>
+                          <Link to="#0">football league tournament</Link>
                         </h5>
                         <div className="movie-rating-percent">
                           <span>327 Montague Street</span>
@@ -567,12 +623,12 @@ const Home = () => {
                   <div className="col-sm-6 col-lg-4">
                     <div className="sports-grid">
                       <div className="movie-thumb c-thumb">
-                        <a href="#0">
+                        <Link to="#0">
                           <img
                             src="assets/images/sports/sports02.jpg"
                             alt="sports"
                           />
-                        </a>
+                        </Link>
                         <div className="event-date">
                           <h6 className="date-title">28</h6>
                           <span>Dec</span>
@@ -580,7 +636,7 @@ const Home = () => {
                       </div>
                       <div className="movie-content bg-one">
                         <h5 className="title m-0">
-                          <a href="#0">world cricket league 2020</a>
+                          <Link to="#0">world cricket league 2020</Link>
                         </h5>
                         <div className="movie-rating-percent">
                           <span>327 Montague Street</span>
@@ -591,12 +647,12 @@ const Home = () => {
                   <div className="col-sm-6 col-lg-4">
                     <div className="sports-grid">
                       <div className="movie-thumb c-thumb">
-                        <a href="#0">
+                        <Link to="#0">
                           <img
                             src="assets/images/sports/sports03.jpg"
                             alt="sports"
                           />
-                        </a>
+                        </Link>
                         <div className="event-date">
                           <h6 className="date-title">28</h6>
                           <span>Dec</span>
@@ -604,7 +660,7 @@ const Home = () => {
                       </div>
                       <div className="movie-content bg-one">
                         <h5 className="title m-0">
-                          <a href="#0">basket ball tournament 2020</a>
+                          <Link to="#0">basket ball tournament 2020</Link>
                         </h5>
                         <div className="movie-rating-percent">
                           <span>327 Montague Street</span>

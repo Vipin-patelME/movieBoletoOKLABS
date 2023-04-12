@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MovieSeatPlan = () => {
   return (
@@ -9,8 +10,8 @@ const MovieSeatPlan = () => {
                 <div className="details-banner-content style-two">
                 <h3 className="title">Venus</h3>
                 <div className="tags">
-                    <a href="#0">City Walk</a>
-                    <a href="#0">English - 2D</a>
+                    <Link to="#0">City Walk</Link>
+                    <Link to="#0">English - 2D</Link>
                 </div>
                 </div>
             </div>
@@ -20,9 +21,9 @@ const MovieSeatPlan = () => {
             <div className="container">
             <div className="page-title-area">
                 <div className="item md-order-1">
-                <a href="movie-ticket-plan.html" className="custom-button back-button">
+                <Link to="movie-ticket-plan.html" className="custom-button back-button">
                     <i className="flaticon-double-right-arrows-angles" />back
-                </a>
+                </Link>
                 </div>
                 <div className="item date-item">
                 <span className="date">MON, SEP 09 2020</span>
@@ -399,7 +400,7 @@ const MovieSeatPlan = () => {
                     <h3 className="title">$150</h3>
                 </div>
                 <div className="book-item">
-                    <a href="movie-checkout.html" className="custom-button">proceed</a>
+                    <Link to="movie-checkout.html" className="custom-button">proceed</Link>
                 </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
@@ -9,9 +10,9 @@ const Contact = () => {
                 <h2 className="title">contact us</h2>
                 <ul className="breadcrumb">
                 <li>
-                    <a href="index.html">
+                    <Link to="index.html">
                     Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     contact us
@@ -62,7 +63,7 @@ const Contact = () => {
                         </div>
                         <div className="info-content">
                             <h6 className="title">phone number</h6>
-                            <a href="Tel:82828282034">+1234 56789</a>
+                            <Link to="Tel:82828282034">+1234 56789</Link>
                         </div>
                         </div>
                         <div className="info-item">
@@ -71,7 +72,7 @@ const Contact = () => {
                         </div>
                         <div className="info-content">
                             <h6 className="title">Email</h6>
-                            <a href="Mailto:info@gmail.com"><span className="__cf_email__" data-cfemail="9bf2f5fdf4dbd9f4f7feeff4">[email&nbsp;protected]</span> .com</a>
+                            <Link to="Mailto:info@gmail.com"><span className="__cf_email__" data-cfemail="9bf2f5fdf4dbd9f4f7feeff4">[email&nbsp;protected]</span> .com</Link>
                         </div>
                         </div>
                     </div>

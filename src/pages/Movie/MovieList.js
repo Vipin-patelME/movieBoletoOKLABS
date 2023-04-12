@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MovieList = () => {
   return (
@@ -206,14 +207,14 @@ const MovieList = () => {
                 <div className="col-sm-10 col-md-8 col-lg-3">
                 <div className="widget-1 widget-banner">
                     <div className="widget-1-body">
-                    <a href="#0">
+                    <Link to="#0">
                         <img src="assets/images/sidebar/banner/banner01.jpg" alt="banner" />
-                    </a>
+                    </Link>
                     </div>
                 </div>
                 <div className="widget-1 widget-check">
                     <div className="widget-header">
-                    <h5 className="m-title">Filter By</h5> <a href="#0" className="clear-check">Clear All</a>
+                    <h5 className="m-title">Filter By</h5> <Link to="#0" className="clear-check">Clear All</Link>
                     </div>
                     <div className="widget-1-body">
                     <h6 className="subtitle">Language</h6>
@@ -254,7 +255,7 @@ const MovieList = () => {
                         </div>
                     </div>
                     <div className="add-check-area">
-                        <a href="#0">view more <i className="plus" /></a>
+                        <Link to="#0">view more <i className="plus" /></Link>
                     </div>
                     </div>
                 </div>
@@ -294,15 +295,15 @@ const MovieList = () => {
                         </div>
                     </div>
                     <div className="add-check-area">
-                        <a href="#0">view more <i className="plus" /></a>
+                        <Link to="#0">view more <i className="plus" /></Link>
                     </div>
                     </div>
                 </div>
                 <div className="widget-1 widget-banner">
                     <div className="widget-1-body">
-                    <a href="#0">
+                    <Link to="#0">
                         <img src="assets/images/sidebar/banner/banner02.jpg" alt="banner" />
-                    </a>
+                    </Link>
                     </div>
                 </div>
                 </div>
@@ -349,13 +350,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie01.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">alone</a>
+                                <Link to="movie-details.html">alone</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -377,13 +378,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie02.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">mars</a>
+                                <Link to="movie-details.html">mars</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -405,13 +406,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie03.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">venus</a>
+                                <Link to="movie-details.html">venus</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -433,13 +434,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie04.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">on watch</a>
+                                <Link to="movie-details.html">on watch</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -461,13 +462,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie05.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">fury</a>
+                                <Link to="movie-details.html">fury</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -489,13 +490,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie06.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">trooper</a>
+                                <Link to="movie-details.html">trooper</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -517,13 +518,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie07.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">horror night</a>
+                                <Link to="movie-details.html">horror night</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -545,13 +546,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie08.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">the lost name</a>
+                                <Link to="movie-details.html">the lost name</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -573,13 +574,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie09.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">calm stedfast</a>
+                                <Link to="movie-details.html">calm stedfast</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -601,13 +602,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie10.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">criminal on party</a>
+                                <Link to="movie-details.html">criminal on party</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -629,13 +630,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie11.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">halloween party</a>
+                                <Link to="movie-details.html">halloween party</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -657,13 +658,13 @@ const MovieList = () => {
                         <div className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                             <div className="movie-thumb c-thumb">
-                                <a href="movie-details.html">
+                                <Link to="movie-details.html">
                                 <img src="assets/images/movie/movie12.jpg" alt="movie" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="movie-content bg-one">
                                 <h5 className="title m-0">
-                                <a href="movie-details.html">the most wanted</a>
+                                <Link to="movie-details.html">the most wanted</Link>
                                 </h5>
                                 <ul className="movie-rating-percent">
                                 <li>
@@ -688,22 +689,22 @@ const MovieList = () => {
                         <div className="movie-area mb-10">
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie01.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie01.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie01.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">alone</a>
+                                <Link to="movie-details.html">alone</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -722,27 +723,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -750,22 +751,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie02.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie02.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie02.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">mars</a>
+                                <Link to="movie-details.html">mars</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -784,27 +785,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -812,22 +813,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie03.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie03.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie03.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">venus</a>
+                                <Link to="movie-details.html">venus</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -846,27 +847,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -874,22 +875,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie04.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie04.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie04.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">on watch</a>
+                                <Link to="movie-details.html">on watch</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -908,27 +909,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -936,22 +937,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie05.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie05.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie05.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">fury</a>
+                                <Link to="movie-details.html">fury</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -970,27 +971,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -998,22 +999,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie06.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie06.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie06.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">trooper</a>
+                                <Link to="movie-details.html">trooper</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -1032,27 +1033,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -1060,22 +1061,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie07.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie07.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie07.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">horror night</a>
+                                <Link to="movie-details.html">horror night</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -1094,27 +1095,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -1122,22 +1123,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie08.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie08.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie08.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">the lost name</a>
+                                <Link to="movie-details.html">the lost name</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -1156,27 +1157,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -1184,22 +1185,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie09.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie09.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie09.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">calm stedfast</a>
+                                <Link to="movie-details.html">calm stedfast</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -1218,27 +1219,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -1246,22 +1247,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie10.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie10.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie10.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">criminal on party</a>
+                                <Link to="movie-details.html">criminal on party</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -1280,27 +1281,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -1308,22 +1309,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie11.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie11.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie11.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">halloween party</a>
+                                <Link to="movie-details.html">halloween party</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -1342,27 +1343,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -1370,22 +1371,22 @@ const MovieList = () => {
                         </div>
                         <div className="movie-list">
                             <div className="movie-thumb c-thumb">
-                            <a href="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie12.jpg">
+                            <Link to="movie-details.html" className="w-100 bg_img h-100" data-background="assets/images/movie/movie12.jpg">
                                 <img className="d-sm-none" src="assets/images/movie/movie12.jpg" alt="movie" />
-                            </a>
+                            </Link>
                             </div>
                             <div className="movie-content bg-one">
                             <h5 className="title">
-                                <a href="movie-details.html">the most wanted</a>
+                                <Link to="movie-details.html">the most wanted</Link>
                             </h5>
                             <p className="duration">2hrs 50 min</p>
                             <div className="movie-tags">
-                                <a href="#0">action</a>
-                                <a href="#0">adventure</a>
-                                <a href="#0">fantasy</a>
+                                <Link to="#0">action</Link>
+                                <Link to="#0">adventure</Link>
+                                <Link to="#0">fantasy</Link>
                             </div>
                             <div className="release">
-                                <span>Release Date : </span> <a href="#0"> November 8 , 2020</a>
+                                <span>Release Date : </span> <Link to="#0"> November 8 , 2020</Link>
                             </div>
                             <ul className="movie-rating-percent">
                                 <li>
@@ -1404,27 +1405,27 @@ const MovieList = () => {
                             <div className="book-area">
                                 <div className="book-ticket">
                                 <div className="react-item">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/heart.png" alt="icons" />
                                     </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item mr-auto">
-                                    <a href="#0">
+                                    <Link to="#0">
                                     <div className="thumb">
                                         <img src="assets/images/icons/book.png" alt="icons" />
                                     </div>
                                     <span>book ticket</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="react-item">
-                                    <a href="#0" className="popup-video">
+                                    <Link to="#0" className="popup-video">
                                     <div className="thumb">
                                         <img src="assets/images/icons/play-button.png" alt="icons" />
                                     </div>
                                     <span>watch trailer</span>
-                                    </a>
+                                    </Link>
                                 </div>
                                 </div>
                             </div>
@@ -1434,13 +1435,13 @@ const MovieList = () => {
                     </div>
                     </div>
                     <div className="pagination-area text-center">
-                    <a href="#0"><i className="fas fa-angle-double-left" /><span>Prev</span></a>
-                    <a href="#0">1</a>
-                    <a href="#0">2</a>
-                    <a href="#0" className="active">3</a>
-                    <a href="#0">4</a>
-                    <a href="#0">5</a>
-                    <a href="#0"><span>Next</span><i className="fas fa-angle-double-right" /></a>
+                    <Link to="#0"><i className="fas fa-angle-double-left" /><span>Prev</span></Link>
+                    <Link to="#0">1</Link>
+                    <Link to="#0">2</Link>
+                    <Link to="#0" className="active">3</Link>
+                    <Link to="#0">4</Link>
+                    <Link to="#0">5</Link>
+                    <Link to="#0"><span>Next</span><i className="fas fa-angle-double-right" /></Link>
                     </div>
                 </div>
                 </div>

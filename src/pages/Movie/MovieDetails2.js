@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MovieDetails2 = () => {
   return (
@@ -11,24 +12,24 @@ const MovieDetails2 = () => {
           <div className="details-banner-wrapper">
             <div className="details-banner-thumb">
               <img src="assets/images/movie/venus.jpg" alt="movie" />
-              <a
-                href="https://www.youtube.com/embed/KGeBMAgc46E"
+              <Link
+                to="https://www.youtube.com/embed/KGeBMAgc46E"
                 className="video-popup"
               >
                 <img src="assets/images/movie/video-button.png" alt="movie" />
-              </a>
+              </Link>
             </div>
             <div className="details-banner-content offset-lg-3">
               <h3 className="title">Venus</h3>
               <div className="tags">
-                <a href="#0">English</a>
-                <a href="#0">Hindi</a>
-                <a href="#0">Telegu</a>
-                <a href="#0">Tamil</a>
+                <Link to="#0">English</Link>
+                <Link to="#0">Hindi</Link>
+                <Link to="#0">Telegu</Link>
+                <Link to="#0">Tamil</Link>
               </div>
-              <a href="#0" className="button">
+              <Link to="#0" className="button">
                 horror
-              </a>
+              </Link>
               <div className="social-and-duration">
                 <div className="duration-area">
                   <div className="item">
@@ -42,29 +43,29 @@ const MovieDetails2 = () => {
                 </div>
                 <ul className="social-share">
                   <li>
-                    <a href="#0">
+                    <Link to="#0">
                       <i className="fab fa-facebook-f" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#0">
+                    <Link to="#0">
                       <i className="fab fa-twitter" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#0">
+                    <Link to="#0">
                       <i className="fab fa-pinterest-p" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#0">
+                    <Link to="#0">
                       <i className="fab fa-linkedin-in" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#0">
+                    <Link to="#0">
                       <i className="fab fa-google-plus-g" />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -133,13 +134,13 @@ const MovieDetails2 = () => {
                   <h5 className="title">0.0</h5>
                 </div>
                 <p>
-                  <a href="#0">Rate It</a>
+                  <Link to="#0">Rate It</Link>
                 </p>
               </div>
             </div>
-            <a href="#0" className="custom-button">
+            <Link to="#0" className="custom-button">
               book tickets
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -150,13 +151,13 @@ const MovieDetails2 = () => {
               <div className="widget-1 widget-tags">
                 <ul>
                   <li>
-                    <a href="#0">2D</a>
+                    <Link to="#0">2D</Link>
                   </li>
                   <li>
-                    <a href="#0">imax 2D</a>
+                    <Link to="#0">imax 2D</Link>
                   </li>
                   <li>
-                    <a href="#0">4DX</a>
+                    <Link to="#0">4DX</Link>
                   </li>
                 </ul>
               </div>
@@ -172,7 +173,7 @@ const MovieDetails2 = () => {
                     </div>
                     <div className="content">
                       <h6>
-                        <a href="#0">Amazon Pay Cashback Offer</a>
+                        <Link to="#0">Amazon Pay Cashback Offer</Link>
                       </h6>
                       <p>Win Cashback Upto Rs 300*</p>
                     </div>
@@ -186,7 +187,7 @@ const MovieDetails2 = () => {
                     </div>
                     <div className="content">
                       <h6>
-                        <a href="#0">PayPal Offer</a>
+                        <Link to="#0">PayPal Offer</Link>
                       </h6>
                       <p>
                         Transact first time with Paypal and get 100% cashback up
@@ -203,7 +204,7 @@ const MovieDetails2 = () => {
                     </div>
                     <div className="content">
                       <h6>
-                        <a href="#0">HDFC Bank Offer</a>
+                        <Link to="#0">HDFC Bank Offer</Link>
                       </h6>
                       <p>
                         Get 15% discount up to INR 100* and INR 50* off on
@@ -215,12 +216,12 @@ const MovieDetails2 = () => {
               </div>
               <div className="widget-1 widget-banner">
                 <div className="widget-1-body">
-                  <a href="#0">
+                  <Link to="#0">
                     <img
                       src="assets/images/sidebar/banner/banner01.jpg"
                       alt="banner"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -229,70 +230,70 @@ const MovieDetails2 = () => {
                 <h3 className="title">photos</h3>
                 <div className="details-photos owl-carousel">
                   <div className="thumb">
-                    <a
-                      href="assets/images/movie/movie-details01.jpg"
+                    <Link
+                      to="assets/images/movie/movie-details01.jpg"
                       className="img-pop"
                     >
                       <img
                         src="assets/images/movie/movie-details01.jpg"
                         alt="movie"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="thumb">
-                    <a
-                      href="assets/images/movie/movie-details02.jpg"
+                    <Link
+                      to="assets/images/movie/movie-details02.jpg"
                       className="img-pop"
                     >
                       <img
                         src="assets/images/movie/movie-details02.jpg"
                         alt="movie"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="thumb">
-                    <a
-                      href="assets/images/movie/movie-details03.jpg"
+                    <Link
+                      to="assets/images/movie/movie-details03.jpg"
                       className="img-pop"
                     >
                       <img
                         src="assets/images/movie/movie-details03.jpg"
                         alt="movie"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="thumb">
-                    <a
-                      href="assets/images/movie/movie-details01.jpg"
+                    <Link
+                      to="assets/images/movie/movie-details01.jpg"
                       className="img-pop"
                     >
                       <img
                         src="assets/images/movie/movie-details01.jpg"
                         alt="movie"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="thumb">
-                    <a
-                      href="assets/images/movie/movie-details02.jpg"
+                    <Link
+                      to="assets/images/movie/movie-details02.jpg"
                       className="img-pop"
                     >
                       <img
                         src="assets/images/movie/movie-details02.jpg"
                         alt="movie"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="thumb">
-                    <a
-                      href="assets/images/movie/movie-details03.jpg"
+                    <Link
+                      to="assets/images/movie/movie-details03.jpg"
                       className="img-pop"
                     >
                       <img
                         src="assets/images/movie/movie-details03.jpg"
                         alt="movie"
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="tab summery-review">
@@ -335,16 +336,16 @@ const MovieDetails2 = () => {
                         <div className="casting-slider owl-carousel">
                           <div className="cast-item">
                             <div className="cast-thumb">
-                              <a href="#0">
+                              <Link to="#0">
                                 <img
                                   src="assets/images/cast/cast01.jpg"
                                   alt="cast"
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="cast-content">
                               <h6 className="cast-title">
-                                <a href="#0">Bill Hader</a>
+                                <Link to="#0">Bill Hader</Link>
                               </h6>
                               <span className="cate">actor</span>
                               <p>As Richie Tozier</p>
@@ -352,16 +353,16 @@ const MovieDetails2 = () => {
                           </div>
                           <div className="cast-item">
                             <div className="cast-thumb">
-                              <a href="#0">
+                              <Link to="#0">
                                 <img
                                   src="assets/images/cast/cast02.jpg"
                                   alt="cast"
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="cast-content">
                               <h6 className="cast-title">
-                                <a href="#0">nora hardy</a>
+                                <Link to="#0">nora hardy</Link>
                               </h6>
                               <span className="cate">actor</span>
                               <p>As raven</p>
@@ -369,16 +370,16 @@ const MovieDetails2 = () => {
                           </div>
                           <div className="cast-item">
                             <div className="cast-thumb">
-                              <a href="#0">
+                              <Link to="#0">
                                 <img
                                   src="assets/images/cast/cast03.jpg"
                                   alt="cast"
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="cast-content">
                               <h6 className="cast-title">
-                                <a href="#0">alvin peters</a>
+                                <Link to="#0">alvin peters</Link>
                               </h6>
                               <span className="cate">actor</span>
                               <p>As magneto</p>
@@ -386,16 +387,16 @@ const MovieDetails2 = () => {
                           </div>
                           <div className="cast-item">
                             <div className="cast-thumb">
-                              <a href="#0">
+                              <Link to="#0">
                                 <img
                                   src="assets/images/cast/cast04.jpg"
                                   alt="cast"
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="cast-content">
                               <h6 className="cast-title">
-                                <a href="#0">josh potter</a>
+                                <Link to="#0">josh potter</Link>
                               </h6>
                               <span className="cate">actor</span>
                               <p>As quicksilver</p>
@@ -418,64 +419,64 @@ const MovieDetails2 = () => {
                         <div className="casting-slider-two owl-carousel">
                           <div className="cast-item">
                             <div className="cast-thumb">
-                              <a href="#0">
+                              <Link to="#0">
                                 <img
                                   src="assets/images/cast/cast05.jpg"
                                   alt="cast"
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="cast-content">
                               <h6 className="cast-title">
-                                <a href="#0">pete warren</a>
+                                <Link to="#0">pete warren</Link>
                               </h6>
                               <span className="cate">actor</span>
                             </div>
                           </div>
                           <div className="cast-item">
                             <div className="cast-thumb">
-                              <a href="#0">
+                              <Link to="#0">
                                 <img
                                   src="assets/images/cast/cast06.jpg"
                                   alt="cast"
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="cast-content">
                               <h6 className="cast-title">
-                                <a href="#0">howard bass</a>
+                                <Link to="#0">howard bass</Link>
                               </h6>
                               <span className="cate">executive producer</span>
                             </div>
                           </div>
                           <div className="cast-item">
                             <div className="cast-thumb">
-                              <a href="#0">
+                              <Link to="#0">
                                 <img
                                   src="assets/images/cast/cast07.jpg"
                                   alt="cast"
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="cast-content">
                               <h6 className="cast-title">
-                                <a href="#0">naomi smith</a>
+                                <Link to="#0">naomi smith</Link>
                               </h6>
                               <span className="cate">producer</span>
                             </div>
                           </div>
                           <div className="cast-item">
                             <div className="cast-thumb">
-                              <a href="#0">
+                              <Link to="#0">
                                 <img
                                   src="assets/images/cast/cast08.jpg"
                                   alt="cast"
                                 />
-                              </a>
+                              </Link>
                             </div>
                             <div className="cast-content">
                               <h6 className="cast-title">
-                                <a href="#0">tom martinez</a>
+                                <Link to="#0">tom martinez</Link>
                               </h6>
                               <span className="cate">producer</span>
                             </div>
@@ -487,17 +488,17 @@ const MovieDetails2 = () => {
                       <div className="movie-review-item">
                         <div className="author">
                           <div className="thumb">
-                            <a href="#0">
+                            <Link to="#0">
                               <img
                                 src="assets/images/cast/cast02.jpg"
                                 alt="cast"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="movie-review-info">
                             <span className="reply-date">13 Days Ago</span>
                             <h6 className="subtitle">
-                              <a href="#0">minkuk seo</a>
+                              <Link to="#0">minkuk seo</Link>
                             </h6>
                             <span>
                               <i className="fas fa-check" /> verified review
@@ -520,32 +521,32 @@ const MovieDetails2 = () => {
                             fringilla lectus venenatis porttitor.{" "}
                           </p>
                           <div className="review-meta">
-                            <a href="#0">
+                            <Link to="#0">
                               <i className="flaticon-hand" />
                               <span>8</span>
-                            </a>
-                            <a href="#0" className="dislike">
+                            </Link>
+                            <Link to="#0" className="dislike">
                               <i className="flaticon-dont-like-symbol" />
                               <span>0</span>
-                            </a>
-                            <a href="#0">Report Abuse</a>
+                            </Link>
+                            <Link to="#0">Report Abuse</Link>
                           </div>
                         </div>
                       </div>
                       <div className="movie-review-item">
                         <div className="author">
                           <div className="thumb">
-                            <a href="#0">
+                            <Link to="#0">
                               <img
                                 src="assets/images/cast/cast04.jpg"
                                 alt="cast"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="movie-review-info">
                             <span className="reply-date">13 Days Ago</span>
                             <h6 className="subtitle">
-                              <a href="#0">rudra rai</a>
+                              <Link to="#0">rudra rai</Link>
                             </h6>
                             <span>
                               <i className="fas fa-check" /> verified review
@@ -568,32 +569,32 @@ const MovieDetails2 = () => {
                             fringilla lectus venenatis porttitor.{" "}
                           </p>
                           <div className="review-meta">
-                            <a href="#0">
+                            <Link to="#0">
                               <i className="flaticon-hand" />
                               <span>8</span>
-                            </a>
-                            <a href="#0" className="dislike">
+                            </Link>
+                            <Link to="#0" className="dislike">
                               <i className="flaticon-dont-like-symbol" />
                               <span>0</span>
-                            </a>
-                            <a href="#0">Report Abuse</a>
+                            </Link>
+                            <Link to="#0">Report Abuse</Link>
                           </div>
                         </div>
                       </div>
                       <div className="movie-review-item">
                         <div className="author">
                           <div className="thumb">
-                            <a href="#0">
+                            <Link to="#0">
                               <img
                                 src="assets/images/cast/cast01.jpg"
                                 alt="cast"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="movie-review-info">
                             <span className="reply-date">13 Days Ago</span>
                             <h6 className="subtitle">
-                              <a href="#0">rafuj</a>
+                              <Link to="#0">rafuj</Link>
                             </h6>
                             <span>
                               <i className="fas fa-check" /> verified review
@@ -616,32 +617,32 @@ const MovieDetails2 = () => {
                             fringilla lectus venenatis porttitor.{" "}
                           </p>
                           <div className="review-meta">
-                            <a href="#0">
+                            <Link to="#0">
                               <i className="flaticon-hand" />
                               <span>8</span>
-                            </a>
-                            <a href="#0" className="dislike">
+                            </Link>
+                            <Link to="#0" className="dislike">
                               <i className="flaticon-dont-like-symbol" />
                               <span>0</span>
-                            </a>
-                            <a href="#0">Report Abuse</a>
+                            </Link>
+                            <Link to="#0">Report Abuse</Link>
                           </div>
                         </div>
                       </div>
                       <div className="movie-review-item">
                         <div className="author">
                           <div className="thumb">
-                            <a href="#0">
+                            <Link to="#0">
                               <img
                                 src="assets/images/cast/cast03.jpg"
                                 alt="cast"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="movie-review-info">
                             <span className="reply-date">13 Days Ago</span>
                             <h6 className="subtitle">
-                              <a href="#0">bela bose</a>
+                              <Link to="#0">bela bose</Link>
                             </h6>
                             <span>
                               <i className="fas fa-check" /> verified review
@@ -664,22 +665,22 @@ const MovieDetails2 = () => {
                             fringilla lectus venenatis porttitor.{" "}
                           </p>
                           <div className="review-meta">
-                            <a href="#0">
+                            <Link to="#0">
                               <i className="flaticon-hand" />
                               <span>8</span>
-                            </a>
-                            <a href="#0" className="dislike">
+                            </Link>
+                            <Link to="#0" className="dislike">
                               <i className="flaticon-dont-like-symbol" />
                               <span>0</span>
-                            </a>
-                            <a href="#0">Report Abuse</a>
+                            </Link>
+                            <Link to="#0">Report Abuse</Link>
                           </div>
                         </div>
                       </div>
                       <div className="load-more text-center">
-                        <a href="#0" className="custom-button transparent">
+                        <Link to="#0" className="custom-button transparent">
                           load more
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

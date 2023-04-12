@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MovieTicketPlan = () => {
   return (
@@ -11,7 +12,7 @@ const MovieTicketPlan = () => {
             <div className="thumb">
                 <img src="assets/images/movie/seat-plan.png" alt="movie" />
             </div>
-            <a href="movie-seat-plan.html" className="custom-button seatPlanButton">Seat Plans<i className="fas fa-angle-right" /></a>
+            <Link to="movie-seat-plan.html" className="custom-button seatPlanButton">Seat Plans<i className="fas fa-angle-right" /></Link>
             </div>
         </section>
         <section className="details-banner hero-area bg_img" data-background="assets/images/banner/banner03.jpg">
@@ -20,10 +21,10 @@ const MovieTicketPlan = () => {
                 <div className="details-banner-content">
                 <h3 className="title">Venus</h3>
                 <div className="tags">
-                    <a href="#0">English</a>
-                    <a href="#0">Hindi</a>
-                    <a href="#0">Telegu</a>
-                    <a href="#0">Tamil</a>
+                    <Link to="#0">English</Link>
+                    <Link to="#0">Hindi</Link>
+                    <Link to="#0">Telegu</Link>
+                    <Link to="#0">Tamil</Link>
                 </div>
                 </div>
             </div>
@@ -102,7 +103,7 @@ const MovieTicketPlan = () => {
                         <i className="far fa-heart" />
                         <i className="fas fa-heart" />
                         </div>
-                        <a href="#0" className="name">Genesis Cinema</a>
+                        <Link to="#0" className="name">Genesis Cinema</Link>
                         <div className="location-icon">
                         <i className="fas fa-map-marker-alt" />
                         </div>
@@ -128,7 +129,7 @@ const MovieTicketPlan = () => {
                         <i className="far fa-heart" />
                         <i className="fas fa-heart" />
                         </div>
-                        <a href="#0" className="name">the beach</a>
+                        <Link to="#0" className="name">the beach</Link>
                         <div className="location-icon">
                         <i className="fas fa-map-marker-alt" />
                         </div>
@@ -154,7 +155,7 @@ const MovieTicketPlan = () => {
                         <i className="far fa-heart" />
                         <i className="fas fa-heart" />
                         </div>
-                        <a href="#0" className="name">city work</a>
+                        <Link to="#0" className="name">city work</Link>
                         <div className="location-icon">
                         <i className="fas fa-map-marker-alt" />
                         </div>
@@ -180,7 +181,7 @@ const MovieTicketPlan = () => {
                         <i className="far fa-heart" />
                         <i className="fas fa-heart" />
                         </div>
-                        <a href="#0" className="name">box park</a>
+                        <Link to="#0" className="name">box park</Link>
                         <div className="location-icon">
                         <i className="fas fa-map-marker-alt" />
                         </div>
@@ -206,7 +207,7 @@ const MovieTicketPlan = () => {
                         <i className="far fa-heart" />
                         <i className="fas fa-heart" />
                         </div>
-                        <a href="#0" className="name">la mer</a>
+                        <Link to="#0" className="name">la mer</Link>
                         <div className="location-icon">
                         <i className="fas fa-map-marker-alt" />
                         </div>
@@ -232,7 +233,7 @@ const MovieTicketPlan = () => {
                         <i className="far fa-heart" />
                         <i className="fas fa-heart" />
                         </div>
-                        <a href="#0" className="name">wanted</a>
+                        <Link to="#0" className="name">wanted</Link>
                         <div className="location-icon">
                         <i className="fas fa-map-marker-alt" />
                         </div>
@@ -257,9 +258,9 @@ const MovieTicketPlan = () => {
                 <div className="col-lg-3 col-md-6 col-sm-10">
                 <div className="widget-1 widget-banner">
                     <div className="widget-1-body">
-                    <a href="#0">
+                    <Link to="#0">
                         <img src="assets/images/sidebar/banner/banner03.jpg" alt="banner" />
-                    </a>
+                    </Link>
                     </div>
                 </div>
                 </div>

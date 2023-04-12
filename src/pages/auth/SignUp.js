@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
   return (
@@ -26,31 +27,31 @@ const SignUp = () => {
                     </div>
                     <div className="form-group checkgroup">
                         <input type="checkbox" id="bal" required defaultChecked />
-                        <label htmlFor="bal">I agree to the <a href="#0">Terms, Privacy Policy</a> and <a href="#0">Fees</a></label>
+                        <label htmlFor="bal">I agree to the <Link to="#0">Terms, Privacy Policy</Link> and <Link to="#0">Fees</Link></label>
                     </div>
                     <div className="form-group text-center">
                         <input type="submit" defaultValue="Sign Up" />
                     </div>
                     </form>
                     <div className="option">
-                    Already have an account? <a href="sign-in">Login</a>
+                    Already have an account? <Link to="sign-in">Login</Link>
                     </div>
                     <div className="or"><span>Or</span></div>
                     <ul className="social-icons">
                     <li>
-                        <a href="#0">
+                        <Link to="#0">
                         <i className="fab fa-facebook-f" />
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#0" className="active">
+                        <Link to="#0" className="active">
                         <i className="fab fa-twitter" />
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#0">
+                        <Link to="#0">
                         <i className="fab fa-google" />
-                        </a>
+                        </Link>
                     </li>
                     </ul>
                 </div>

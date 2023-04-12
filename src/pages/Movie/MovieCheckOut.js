@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MovieCheckOut = () => {
   return (
@@ -9,8 +10,8 @@ const MovieCheckOut = () => {
                 <div className="details-banner-content style-two">
                 <h3 className="title">Venus</h3>
                 <div className="tags">
-                    <a href="#0">City Walk</a>
-                    <a href="#0">English - 2D</a>
+                    <Link to="#0">City Walk</Link>
+                    <Link to="#0">English - 2D</Link>
                 </div>
                 </div>
             </div>
@@ -20,9 +21,9 @@ const MovieCheckOut = () => {
             <div className="container">
             <div className="page-title-area">
                 <div className="item md-order-1">
-                <a href="movie-ticket-plan.html" className="custom-button back-button">
+                <Link to="movie-ticket-plan.html" className="custom-button back-button">
                     <i className="flaticon-double-right-arrows-angles" />back
-                </a>
+                </Link>
                 </div>
                 <div className="item date-item">
                 <span className="date">MON, SEP 09 2020</span>
@@ -49,9 +50,9 @@ const MovieCheckOut = () => {
                     <h5 className="title">Already a Boleto  Member?</h5>
                     <p>Sign in to earn points and make booking easier!</p>
                     </div>
-                    <a href="#0" className="sign-in-area">
+                    <Link to="#0" className="sign-in-area">
                     <i className="fas fa-user" /><span>Sign in</span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="checkout-widget checkout-contact">
                     <h5 className="title">Share your Contact  Details </h5>
@@ -85,22 +86,22 @@ const MovieCheckOut = () => {
                     <h5 className="title">Payment Option </h5>
                     <ul className="payment-option">
                     <li className="active">
-                        <a href="#0">
+                        <Link to="#0">
                         <img src="assets/images/payment/card.png" alt="payment" />
                         <span>Credit Card</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#0">
+                        <Link to="#0">
                         <img src="assets/images/payment/card.png" alt="payment" />
                         <span>Debit Card</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#0">
+                        <Link to="#0">
                         <img src="assets/images/payment/paypal.png" alt="payment" />
                         <span>paypal</span>
-                        </a>
+                        </Link>
                     </li>
                     </ul>
                     <h6 className="subtitle">Enter Your Card Details </h6>
@@ -136,7 +137,7 @@ const MovieCheckOut = () => {
                     </div>
                     </form>
                     <p className="notice">
-                    By Clicking "Make Payment" you agree to the <a href="#0">terms and conditions</a>
+                    By Clicking "Make Payment" you agree to the <Link to="#0">terms and conditions</Link>
                     </p>
                 </div>
                 </div>
@@ -174,7 +175,7 @@ const MovieCheckOut = () => {
                 </div>
                 <div className="proceed-area  text-center">
                     <h6 className="subtitle"><span>Amount Payable</span><span>$222</span></h6>
-                    <a href="#0" className="custom-button back-button">proceed</a>
+                    <Link to="#0" className="custom-button back-button">proceed</Link>
                 </div>
                 </div>
             </div>
