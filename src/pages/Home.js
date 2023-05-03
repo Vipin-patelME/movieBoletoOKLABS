@@ -1,4 +1,5 @@
-import React, { useReducer } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const initialState ={
@@ -21,24 +22,11 @@ const initialState ={
   ]
 } 
 
-const reducer = (state, action)=>{
-  switch(action.type){
-    case "REMOVE_MOVIE":
-      return{
-        ...state,
-        movies:[...state.movies?.filter(eachMovie=>eachMovie.id !== action.id)]
-      }
-  }
-}
-
-
-
-
 
 
 const Home = () => {
 
-  const [movieDetail, dispatch] = useReducer(reducer, initialState)
+  const {t} = useTranslation()
 
   return (
     <>
@@ -50,13 +38,13 @@ const Home = () => {
         <div className="container">
           <div className="banner-content">
             <h1 className="title  cd-headline clip">
-            <span className="d-block">Hey Vipin</span>
-              <span className="d-block">book your</span> tickets for
+            <span className="d-block">{t("Hey Vipin")}</span>
+              <span className="d-block">{t("book your")}</span> {t("tickets")} for
               <span className="color-theme cd-words-wrapper p-0 m-0 ms-1">
                 <b className="is-visible">Vipin's Class</b>
-                <b>Event</b>
-                <b>Sport</b>
-                <b>Movie</b>
+                <b>{t("Event")}</b>
+                <b>{t("Sport")}</b>
+                <b>{t("Movie")}</b>
               </span>
             </h1>
             <p>
@@ -333,13 +321,13 @@ const Home = () => {
                       <h6 className="sub-title">
                         <Link to="#0">mars</Link>
                       </h6>
-                      <p>Movies</p>
+                      <p>{t("Movies")}</p>
                     </li>
                     <li>
                       <h6 className="sub-title">
                         <Link to="#0">alone</Link>
                       </h6>
-                      <p>Movies</p>
+                      <p>{t("Movies")}</p>
                     </li>
                     <li>
                       <h6 className="sub-title">
@@ -370,16 +358,15 @@ const Home = () => {
             <div className="col-lg-9">
               <div className="article-section padding-bottom">
                 <div className="section-header-1">
-                  <h2 className="title">movies</h2>
+                  <h2 className="title">{t("Movies")}</h2>
                   <Link className="view-all" to="movie-grid">
                     View All
                   </Link>
                 </div>
                 <div className="row mb-30-none justify-content-center">
                   {
-                    movieDetail?.movies?.map(eachMovie=>{
+                    initialState?.movies?.map((eachMovie, idx)=>{
                       return(
-                        <>
                           <div key={eachMovie.id} className="col-sm-6 col-lg-4">
                             <div className="movie-grid">
                               <div className="movie-thumb c-thumb">
@@ -413,20 +400,10 @@ const Home = () => {
                                     </div>
                                     <span className="content">88%</span>
                                   </li>
-                                  <li>
-                                    <div onClick={()=>dispatch({type:"REMOVE_MOVIE", id:eachMovie.id})} className="thumb">
-                                      <img
-                                        src="https://images.freeimages.com/fic/images/icons/1262/amora/256/delete.png"
-                                        alt="movie"
-                                        style={{width:"40px", cursor:"pointer"}}
-                                      />
-                                    </div>
-                                  </li>
                                 </ul>
                               </div>
                             </div>
                           </div>
-                        </>
                       )
                     })
                   }
@@ -508,7 +485,7 @@ const Home = () => {
               </div>
               <div className="article-section padding-bottom">
                 <div className="section-header-1">
-                  <h2 className="title">events</h2>
+                  <h2 className="title">{t("Event")}</h2>
                   <Link className="view-all" to="events.html">
                     View All
                   </Link>
@@ -590,7 +567,7 @@ const Home = () => {
               </div>
               <div className="article-section">
                 <div className="section-header-1">
-                  <h2 className="title">sports</h2>
+                  <h2 className="title">{t("Sport")}</h2>
                   <Link className="view-all" to="sports">
                     View All
                   </Link>
