@@ -13,7 +13,7 @@ const SignIn = () => {
                 <div className="account-area">
                     <div className="section-header-3">
                     <span className="cate">hello</span>
-                    <h2 className="title">welcome back</h2>
+                    <h2 className="title">welcome <Link to="/">back</Link></h2>
                     </div>
                     <SignInFeature />
                     <div className="option">

@@ -20,7 +20,7 @@ const SignUp = () => {
             <div className="account-area">
               <div className="section-header-3">
                 <span className="cate">welcome</span>
-                <h2 className="title">to Boleto </h2>
+                <h2 className="title">to Boleto <Link to="/">back</Link> </h2>
               </div>
               <UserSignup />
               <div className="option">
