@@ -1,5 +1,5 @@
-import { changeLanguage } from 'i18next'
 import React from 'react'
+import { changeLanguage } from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
@@ -58,10 +58,10 @@ const Navigation = () => {
                 <Link to="#0">{t("Pages")}</Link>
                     <ul className="submenu">
                         <li>
-                        <Link to="sign-in">Sign In</Link>
+                            <Link to="sign-in/vipin@gmail.com/123456">Sign In</Link>
                         </li>
                         <li>
-                        <Link to="sign-up">Sign Up</Link>
+                            <Link to="sign-up">Sign Up</Link>
                         </li>
                     </ul>
                 </li>

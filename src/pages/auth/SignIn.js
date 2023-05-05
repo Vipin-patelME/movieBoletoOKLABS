@@ -1,7 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import SignInFeature from '../../features/sign-in-user/SignInFeature'
 
 const SignIn = () => {
+
+
   return (
     <>
         <section className="account-section bg_img" data-background="assets/images/account/account-bg.jpg">
@@ -12,24 +15,7 @@ const SignIn = () => {
                     <span className="cate">hello</span>
                     <h2 className="title">welcome back</h2>
                     </div>
-                    <form className="account-form">
-                    <div className="form-group">
-                        <label htmlFor="email2">Email<span>*</span></label>
-                        <input type="text" placeholder="Enter Your Email" id="email2" required />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="pass3">Password<span>*</span></label>
-                        <input type="password" placeholder="Password" id="pass3" required />
-                    </div>
-                    <div className="form-group checkgroup">
-                        <input type="checkbox" id="bal2" required defaultChecked />
-                        <label htmlFor="bal2">remember password</label>
-                        <Link to="#0" className="forget-pass">Forget Password</Link>
-                    </div>
-                    <div className="form-group text-center">
-                        <input type="submit" defaultValue="log in" />
-                    </div>
-                    </form>
+                    <SignInFeature />
                     <div className="option">
                     Don't have an account? <Link to="sign-up">sign up now</Link>
                     </div>
