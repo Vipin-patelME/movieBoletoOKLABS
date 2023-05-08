@@ -1,117 +1,19 @@
-//const arr = [5,6,7,8,14,10,200,0,3,5,1,2,1,4,3,9]
+let students =  [
+    {name:"Mahesh", age:"10",dobYr:"2013"},
+    {name:"Shivam", age:"25",dobYr:"1998"},
+    {name:"Manish", age:"26",dobYr:"1997"},
+    {name:"Preetam", age:"24",dobYr:"1999"},
+    {name:"Saksham", age:"16",dobYr:"2007"},
+]
 
-// let place = 3;
-// for (let i=arr.length; i>=0; i--){
-//     if(i >= place){
-//         arr[i] = arr[i-1]
-//         if(i === place){
-//             arr[i]=value
-//         }
-//     }
-// }
-// console.log(arr)
-// for (let i=place; i<arr.length; i++){
-//     arr[i] = arr[i+1]
-// }
-// arr.length = arr.length-1
-// console.log(arr)
-// for (let i=0; i<arr.length; i++){
-//     for(let j=0; j<arr.length; j++){
-//         if(arr[j] < arr[j+1]){
-//             let temp = arr[j]
-//             arr[j] = arr[j+1]
-//             arr[j+1]= temp
-//         }
-//     }
-// }
-// console.log(arr)
+let arr1 = [34,53,2,56,34,23,43,53,24,67];
 
 
-// let stack = []
-// let currentLength = 0;
-// let maxLEngth = 8;
+// //console.log(arr1.sort());
+// const sortedArr = arr1.sort((a,b)=>(b -a))
+// console.log(sortedArr)
+// let sumOfArry = arr1.reduce((a,b) => a+b, 10);
+// console.log(sumOfArry);
 
-// const push = (value)=>{
-//     if(currentLength <= maxLEngth){
-//         stack[currentLength] = value
-//         currentLength += 1
-//     }
-    
-// }
-
-// push(30);
-// push(3);
-// push(38);
-// push(14);
-// pop()
-// push(100)
-// console.log(stack)
-
-// function pop(){
-//     if(stack.length > 0){
-//         stack.length = stack.length-1
-//         currentLength -= 1
-//     }
-// }
-
-// let arr1 = [1,3,4,6,9,8];
-// let position = 0
-// let missingNo = [];
-// for (let i=1; i<10; i++){
-//     if(arr1.indexOf(i) < 0){
-//         missingNo[position] = i
-//         position +=1
-//     }
-// }
-// console.log(missingNo)
-
-let oddArr = [5,7,9,15];
-//result = 11
-let position=0;
-let missingNo = [];
-for (let i=5; i<=15; i++){
-    if( i%2 === 1 ){
-        if(oddArr.indexOf(i) < 0){
-            missingNo[position] = i
-            position += 1
-        }
-    }
-}
-console.log(missingNo);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let sortedStudent = students.sort((std1, std2)=> (std2.age  -std1.age))
+console.log(sortedStudent);

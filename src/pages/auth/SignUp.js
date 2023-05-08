@@ -24,7 +24,7 @@ const SignUp = () => {
               </div>
               <UserSignup />
               <div className="option">
-                Already have an account? <Link to="sign-in">Login</Link>
+                Already have an account? <Link to="/sign-in">Login</Link>
               </div>
               <div className="or">
                 <span>Or</span>

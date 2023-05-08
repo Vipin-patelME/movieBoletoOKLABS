@@ -25,6 +25,7 @@ function App() {
             }
           </Route>
           <Route path='/sign-in/:gmail/:password' element={<SignIn />} />
+          <Route path='/sign-in' element={<SignIn />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

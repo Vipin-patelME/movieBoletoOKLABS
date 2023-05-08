@@ -14,9 +14,15 @@ const initialState = {
 export const signInAsync = createAsyncThunk(
     "user/signIn",
     async(options)=>{
-        console.log("options----->", options)
+        //console.log("options----->", options)
         const res = await fetch(`${BASE_URL}/api/auth/local`, options)
+        
         const data = await res.json()
+        console.log("------>",data)
+        const jwtToken = data.jwt;
+        localStorage.setItem("userData", JSON.stringify(data.user))
+        //console.log(jwtToken)
+        localStorage.setItem("jwtToken",jwtToken)
         // console.log(data)
         return data
     }
@@ -30,6 +36,14 @@ export const signInUserSlice = createSlice({
             state.error = ""
             state.loading = false
             state.success=false
+        },
+        signout: (state)=>{
+            localStorage.clear();
+            state.loading=false;
+            state.error="";
+            state.success=false;
+            state.users={};
+            state.token=""
         }
     },
     extraReducers:(builder)=>{
@@ -61,6 +75,6 @@ export const signInUserSlice = createSlice({
     }
 })
 
-export const {resetState} = signInUserSlice.actions
+export const {resetState, signout} = signInUserSlice.actions
 
 export default signInUserSlice.reducer

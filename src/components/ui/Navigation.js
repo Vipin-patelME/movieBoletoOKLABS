@@ -1,17 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { changeLanguage } from 'i18next'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { signout } from '../../features/sign-in-user/sign-in-user-slice'
 
 const Navigation = () => {
 
     const {t} = useTranslation()
+    const dispatch = useDispatch();
+    const navigate = useNavigate()
+    const userData = useSelector(state => state.signInUSer)
+    console.log(userData)
+    const {token} = userData
+    const jwtToken = localStorage.getItem("jwtToken")
+    console.log(token)
+    useEffect(()=>{
+        console.log("Logged out")
+        if(!jwtToken){
+            navigate("/sign-in")
+        }
+
+    }, [token])
 
     const onChangeLanguage= (lang)=>{
         changeLanguage(lang)
     }
+    
 
-  return (
+    return (
     <>
         <ul className="menu">
                 <li>
@@ -90,9 +107,16 @@ const Navigation = () => {
                         </li>
                     </ul>
                 </li>
-                <li className="header-button pr-0">
-                    <Link to="sign-up">{t("Join")}</Link>
-                </li>
+                {
+                    jwtToken ? 
+                    <li className="header-button pr-0">
+                        <button onClick={()=>{dispatch(signout())}} style={{borderStyle:"none", color:"black", backgroundColor:"#FFF080"}} type='button'>{ t("Sign Out")}</button>
+                    </li>
+                    :
+                    <li className="header-button pr-0">
+                        <Link  to="/sign-up">{t("Join")}</Link>
+                    </li>
+                }
             </ul>
         </>
   )

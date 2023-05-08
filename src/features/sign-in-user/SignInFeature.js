@@ -17,7 +17,7 @@ const SignInFeature = () => {
     const navigate = useNavigate()
 
     const loginDetail = useSelector(state => state.signInUSer)
-    //console.log("loginDetail",loginDetail)
+    console.log("loginDetail",loginDetail)
     const {loading, error, success, users, token} = loginDetail
     useEffect(() => {
         console.log('I am useEffect')

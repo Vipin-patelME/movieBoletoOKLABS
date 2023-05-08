@@ -17,7 +17,7 @@ const SignIn = () => {
                     </div>
                     <SignInFeature />
                     <div className="option">
-                    Don't have an account? <Link to="sign-up">sign up now</Link>
+                    Don't have an account? <Link to="/sign-up">sign up now</Link>
                     </div>
                     <div className="or"><span>Or</span></div>
                     <ul className="social-icons">
