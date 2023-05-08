@@ -17,6 +17,7 @@ const Navigation = () => {
     console.log(token)
     useEffect(()=>{
         console.log("Logged out")
+        console.log("toke------>", jwtToken)
         if(!jwtToken){
             navigate("/sign-in")
         }
