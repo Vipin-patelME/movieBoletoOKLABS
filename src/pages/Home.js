@@ -1,6 +1,9 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import Movies from "../features/movie/Movies";
+import { useSelector } from "react-redux";
+import Loader from "../components/ui/Loader";
 
 const initialState ={
   movies:[
@@ -27,6 +30,8 @@ const initialState ={
 const Home = () => {
 
   const {t} = useTranslation()
+  const {loading} = useSelector(state => state.movie)
+  console.log("Loading--->", loading)
 
   return (
     <>
@@ -364,7 +369,7 @@ const Home = () => {
                   </Link>
                 </div>
                 <div className="row mb-30-none justify-content-center">
-                  {
+                  {/* {
                     initialState?.movies?.map((eachMovie, idx)=>{
                       return(
                           <div key={eachMovie.id} className="col-sm-6 col-lg-4">
@@ -406,81 +411,11 @@ const Home = () => {
                           </div>
                       )
                     })
+                  } */}
+                  {
+                    loading ? <Loader /> : <Movies />
                   }
-                  {/* <div className="col-sm-6 col-lg-4">
-                    <div className="movie-grid">
-                      <div className="movie-thumb c-thumb">
-                        <Link to="#0">
-                          <img
-                            src="assets/images/movie/movie02.jpg"
-                            alt="movie"
-                          />
-                        </Link>
-                      </div>
-                      <div className="movie-content bg-one">
-                        <h5 className="title m-0">
-                          <Link to="#0">mars</Link>
-                        </h5>
-                        <ul className="movie-rating-percent">
-                          <li>
-                            <div className="thumb">
-                              <img
-                                src="assets/images/movie/tomato.png"
-                                alt="movie"
-                              />
-                            </div>
-                            <span className="content">88%</span>
-                          </li>
-                          <li>
-                            <div className="thumb">
-                              <img
-                                src="assets/images/movie/cake.png"
-                                alt="movie"
-                              />
-                            </div>
-                            <span className="content">88%</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-6 col-lg-4">
-                    <div className="movie-grid">
-                      <div className="movie-thumb c-thumb">
-                        <Link to="#0">
-                          <img
-                            src="assets/images/movie/movie03.jpg"
-                            alt="movie"
-                          />
-                        </Link>
-                      </div>
-                      <div className="movie-content bg-one">
-                        <h5 className="title m-0">
-                          <Link to="#0">venus</Link>
-                        </h5>
-                        <ul className="movie-rating-percent">
-                          <li>
-                            <div className="thumb">
-                              <img
-                                src="assets/images/movie/tomato.png"
-                                alt="movie"
-                              />
-                            </div>
-                            <span className="content">88%</span>
-                          </li>
-                          <li>
-                            <div className="thumb">
-                              <img
-                                src="assets/images/movie/cake.png"
-                                alt="movie"
-                              />
-                            </div>
-                            <span className="content">88%</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div> */}
+                
                 </div>
               </div>
               <div className="article-section padding-bottom">
