@@ -3,17 +3,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { getMovies } from './movieSlice'
 
-const Movies = () => {
-    const name = "vipin"
+const Movie2 = () => {
     const dispatch = useDispatch()
     const {movies} = useSelector((state)=> state.movie)
     console.log(movies)
-
+    
     useEffect(() => {
         dispatch(getMovies())
-
     }, [])
-    
 
   return (
     <>{
@@ -101,4 +98,4 @@ const Movies = () => {
   )
 }
 
-export default Movies
+export default Movie2

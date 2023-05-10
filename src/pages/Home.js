@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Movies from "../features/movie/Movies";
+import Movie2 from "../features/movie/Movie2";
 import { useSelector } from "react-redux";
 import Loader from "../components/ui/Loader";
 
@@ -413,7 +413,7 @@ const Home = () => {
                     })
                   } */}
                   {
-                    loading ? <Loader /> : <Movies />
+                    loading ? <Loader /> : <Movie2 />
                   }
                 
                 </div>
